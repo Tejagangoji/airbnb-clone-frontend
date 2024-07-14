@@ -7,10 +7,6 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
 const Withnavandfooter = () => {
-  const [total, setitems] = [
-    { id: "", photos: ["kkdhsg", "shkdgfb", "dahf"] },
-    { id: 2, photos: ["kkdhsg", "shkdgfb", "dahf"] }
-  ]
   return (
     <>
       <Navbar />
