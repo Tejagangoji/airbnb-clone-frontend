@@ -1,5 +1,5 @@
 import React from 'react';
-import { footerData } from '../../ApiData/ProductDetails/FooterOptions';
+import { footerData } from '../../ApiData/ProductDetails/ProductDetails';
 import { Options } from '../../common/Options';
 import './Footer.css';
 import FooterBottom from './FooterBottom';

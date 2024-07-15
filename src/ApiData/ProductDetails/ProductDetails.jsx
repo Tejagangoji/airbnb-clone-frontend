@@ -84,6 +84,21 @@ export const footerData = [
     }
 ]
 
+export const Cart = [
+    {
+        options: [
+            {
+                name: "Share",
+                link:""
+            },
+             {
+                name: "Save",
+                link:""
+            }
+        ]
+    }
+]
+
 
 
 
