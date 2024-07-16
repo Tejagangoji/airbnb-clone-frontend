@@ -16,7 +16,14 @@ import { GiTravelDress } from "react-icons/gi";
 import { FaHelmetUn } from "react-icons/fa6";
 import { CiLock } from "react-icons/ci";
 import { FaStar } from 'react-icons/fa';
-
+import { LuGraduationCap } from "react-icons/lu";
+import { MdOutlineWorkOutline } from "react-icons/md";
+import { LiaSmokingSolid } from "react-icons/lia";
+import { CiMusicNote1 } from "react-icons/ci";
+import { FaRegClock } from "react-icons/fa";
+import box from '../../assets/productDetailsPage/treassure/box.png';
+import { informationData } from "../../ApiData/ProductDetails/ProductDetails";
+import { ThingsData } from "../../ApiData/ProductDetails/ProductDetails";
 
 export function Carting() {
     return (
@@ -45,21 +52,24 @@ export function Gallery() {
             <Grid container spacing={2} className="gridContainer" >
                 <Grid item xs={6} className="childGrid">
                     <div className="leftImage">
-                        <img src={img1} alt="img1"  width={"100%"} height={"50%"}/>
+                        <img src={img1} alt="img1"  width={"100%"} height={"50%"} />
                     </div>
                 </Grid>
                 <Grid item xs={3} className="childGrid">
-                    <img src={img2} alt="img2" width={"90%"} height={"23%"} style={{paddingBottom: "10px"}}/>
-                    <img src={img3} alt="img3" width={"90%"} height={"22%"} />
+                    <img src={img2} alt="img2" width={"90%"} height={"45%"} style={{paddingBottom: "10px"}}/>
+                    <img src={img3} alt="img3" width={"90%"} height={"45%"} />
                 </Grid>
                 <Grid item xs={3} className="childGrid">
-                    <img src={img4} alt="img4" width={"90%"} height={"23%"} />
-                    <img src={img5} alt="img5" width={"90%"} height={"22%"} />
+                    <img style={{marginBottom:"10px"}} src={img4} alt="img4" width={"90%"} height={"43%"} />
+                    <img  style={{marginBottom:"12px"}} src={img5} alt="img5" width={"90%"} height={"45%"} />
                 </Grid>
             </Grid>
         </div>
     );
 }
+
+
+
 export function Exploring() {
     return (
         <div className="exploreContainer">
@@ -153,25 +163,125 @@ export function Description() {
 } 
 export function HostProfile() {
     return (
-        <div className="left-block">
-            <div className="image-column">
-                <img src={image} alt="Profile" className="profile-image" />
-            </div>
-            <div className="content-column">
-                <div className="number">17</div>
-                <div className="small-element">Reviews</div>
-                <div className="rating">
-                    <FaStar className="star-icon" />
-                    <span>Rating 5 star icon</span>
+            <div className="hostingProfile">
+                <h1 style={{margin: "15px", fontSize:"25px"}}>Meet your Host</h1>
+                <div className="left-block">
+                
+                <div className="image-column">
+                    <img src={image} alt="Profile" className="profile-image" />
                 </div>
-                <div className="hosting">3 months Hosting</div>
+                <div className="content-column">
+                    <div className="number">17</div>
+                    <div className="small-element">Reviews</div>
+                    <hr/>
+                    <div className="rating">
+                        
+                        <span> 5 <FaStar className="star-icon" /><br/><small style={{fontSize:"10px"}}>Rating</small></span>
+                    </div>
+                    <hr/>
+                    <div className="hosting">3<br/><small style={{fontSize:"10px", fontWeight:"bold"}}>months Hosting</small></div>
+                </div>
+            </div>
+            <hr/>
+            </div>
+    );
+}
+export function HostInstructions() {
+    return (
+        <div>
+        <div className="instruction">
+            <span className="instructIcons"><LuGraduationCap /></span>
+            <div className="instruction-text">
+                <p>Where I went to school: Xavier’s Institute for Higher Learning</p>
+            </div>
+        </div>
+        <div className="instruction">
+            <span className="instructIcons"><MdOutlineWorkOutline /></span>
+            <div className="instruction-text">
+                <p>My work: Protecting humanity</p>
+            </div>
+        </div>
+        <div className="instruction">
+            <span className="instructIcons"><LiaSmokingSolid /></span>
+            <div className="instruction-text">
+                <p>Most useless skill: All my skills are cool. Next</p>
+            </div>
+        </div>
+        <div className="instruction">
+            <span className="instructIcons"><CiMusicNote1 /></span>
+            <div className="instruction-text">
+                <p>Favourite song in secondary school: Anything by Dazzler!</p>
+            </div>
+            </div>
+        <div className="instruction">
+            <span className="instructIcons"><FaRegClock /></span>
+            <div className="instruction-text">
+                <p>I spend too much time: Two words. Video. Games.</p>    
+                </div>
+               
+            </div>
+             <p style={{width:'50%', marginTop:'2rem'}}>Hey, I’m Jubilee! If I’m not at the mall, you can find me hanging with my fellow X-Men. We’re talking Cyclops, Storm and Wolverine! I learned how to light up the sky at Xavier’s Institute for Higher Learning. Basically, I have the power to shoot fireworks from my hands. Rad, huh? Can’t wait to have you over to the house so you can see what we’re all about.</p>
+            <hr style={{width:"50%"}}/>
+    </div>
+    );
+}
+export function Icons() {
+    return (
+        <div>
+            <div className="centered-container">
+                <img src={box} alt="icon"/>
+                <h1 style={{fontFamily:"boldest", fontSize:"6rem"}}>icons</h1>
+            <p style={{ fontSize: "1rem", textAlign: "center" }}>Extraordinary experiences hosted by the world’s greatest<br />names in music, film, TV, art, sports and more.</p>
+            </div>
+            <hr style={{margin:"20px"}}/>
+        </div>
+    );
+}
+export function Information() {
+    return (
+        <div>
+            <div className='InformationContainer'>
+                <div className='Inform'>
+                {
+                    informationData?.map(item => 
+                        <div>
+                            <h3>{item.icon }</h3>
+                            <h3>{item.title}</h3>
+                            <p>{item.paragraph}</p>     
+                        </div>
+                    )
+                }
+                </div>
+            </div>
+            <hr />
+            <div>
+                <p style={{fontSize:"15px", margin:"20 0"}}>If you’re selected and decide to book, you’ll have 24 hours to complete the purchase. Travel costs are not included. Read the full rules,<br/> including age and geographical eligibility, how data will be used, odds of being selected and other terms.</p>
+                <hr/>
             </div>
         </div>
     );
 }
+export function ThingsToKnow() {
+    return (
+            <div className='thingContainer'>
+                <div className='things'>
+                    {ThingsData?.map(item => (
+                    <div className="item">
+                    <h3>{item.title}</h3>
+                    <div className="content">
+                    <p>{item.para1}</p>
+                    <p>{item.para2}</p>
+                    <p>{item.para3}</p>
+                    <p>{item.para4}</p>
+                    <a className="thingsAnchor" href={item.link}>Show more</a>
+                    </div>
+                    </div>
+                ))}
+                </div>
+            </div>
 
-
-
+    );
+}
 export default function ProductDetails() {
     return (
         <div className="productDetails">
@@ -181,7 +291,11 @@ export default function ProductDetails() {
                 <Exploring />
                 <Instructions />
                 <Description />
-                <HostProfile/>
+                <HostProfile />
+                <HostInstructions />
+                <Icons/>
+                <Information />
+                <ThingsToKnow />
             </div>
            
         </div>

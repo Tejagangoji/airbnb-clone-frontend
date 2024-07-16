@@ -52,50 +52,54 @@ button.share:hover, button.save:hover {
 }
 
 
-/* ============== */
+
 
 
 .gridContainer {
-    height:60%;
+    height:90%;
+    display: flex;
+    object-fit: cover;
 }
 
 .leftImage {
+    object-fit: cover;
     width: 95%;
-    height: 90%;
+    height: 182%;
     padding: 0px 0px 10px 50px;
 }
 
 .childGrid {
+    object-fit: cover;
     height: 500px;
     padding: 0px !important;
 }
-/* Exploring.css */
 
 .exploreContainer {
     display: flex;
-    justify-content: space-evenly; /* Items are placed at each end of the container */
-    width: 100%; /* Adjust as needed */
-    margin: 10px 20px; /* Center the container horizontally */
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 10px 20px;
 }
 
 .block1 {
-    flex: 1; /* Takes up remaining space */
-    padding: 2vw; /* Padding in viewport width */
+    flex: 1;
+    padding: 2vw;
     border-radius: 2vw;
-    width: 70%; /* Border radius in viewport width */
+    width: 50%;
     background-color: #ffffff;
 }
 
 .block2 {
-    flex: 1; /* Takes up remaining space */
-    padding: 2vw; /* Padding in viewport width */
-    border-radius: 2vw; /* Border radius in viewport width */
+    flex: 1;
+    padding: 2vw;
+    border-radius: 2vw; 
     background-color: #ffffff;
     display: flex;
-    width: 50%;
-    justify-content: center; /* Center content horizontally */
+    width: 20%;
+    margin-left: 10rem;
+    justify-content: center; 
     align-items: center;
-     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Center content vertically */
+     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .requestContainer {
@@ -114,42 +118,42 @@ button.share:hover, button.save:hover {
 }
 
 .requestButton {
-    background-color: #d6475a; /* Green background */
-    color: white; /* Padding in viewport width */
-    font-size: 1vw; /* Font size in viewport width */
+    background-color: #d6475a; 
+    color: white; 
+    font-size: 1vw; 
     border: none;
     gap: 1rem;
     cursor: pointer;
     width: 100%;
-    border-radius: 2vw; /* Border radius in viewport width */
-    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    border-radius: 2vw; 
+    transition: background-color 0.3s ease;
 }
 
 .requestButton:hover {
-    background-color: #ad4848; /* Darker green on hover */
+    background-color: #ad4848;
 }
 .instruction {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 1rem; /* Adjust as needed for spacing between items */
+    margin-bottom: 1rem;
 }
 
 .instructIcons {
-    width: 24px; /* Adjust icon size as needed */
-    margin-right: 10px; /* Space between icon and text */
-    flex-shrink: 0; /* Prevent icons from shrinking */
-    align-self: flex-start; /* Align icons to the top of the container */
+    width: 24px; 
+    margin-right: 10px; 
+    flex-shrink: 0; 
+    align-self: flex-start; 
 }
 
 .instruction-text {
-    display: flex; /* Use flexbox for inner content */
-    flex-direction: column; /* Stack paragraphs vertically */
-    align-items: flex-start; /* Align items to the start of the cross axis */
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
 }
 
 .instruction-text p, .instruction-text small {
-    margin: 0; /* Remove default margin for paragraphs and small tags */
-    margin-left: 10px; /* Space between icon and text */
+    margin: 0; 
+    margin-left: 10px;
 }
 .descriptionContainer {
     width: 52%;
@@ -169,16 +173,23 @@ button.share:hover, button.save:hover {
 .list ul li{
     margin: 0;
 }
+.hostingProfile {
+    height: 10%;
+}
 .left-block {
     display: flex;
     align-items: center;
     padding: 20px;
     width: 30%;
     border: 1px solid #ccc;
+    border-radius: 20%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); 
+    
 }
 
+
 .image-column {
-    margin-right: 20px;
+    margin-left: 30px;
 }
 
 .profile-image {
@@ -194,32 +205,107 @@ button.share:hover, button.save:hover {
 
 .number {
     font-size: 24px;
-    font-weight: bold;
+    font-weight: bolder;
+
 }
 
 .small-element {
     margin-top: 5px;
-    color: #666;
+    color: black;
+    font-weight: bold;
+    font-size: 10px;
 }
 
 .rating {
     display: flex;
     align-items: center;
     margin-top: 10px;
+    font-weight: bolder;
 }
 
 .star-icon {
-    color: gold;
+    color: black;
     margin-right: 5px;
 }
 
 .hosting {
-    margin-top: 5px;
-    color: #333;
+    margin-top: 2px;
+    color: black;
+}
+.centered-container {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center;
+  margin-top: 50px; 
 }
 
+.centered-container img {
+  max-width: 40%; 
+}
+.centered-container h2 {
+  margin-top: 20px; 
+}
 
+.centered-container p {
+  margin-top: 10px; 
+}
+.InformationContainer {
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
 
+}
+.Inform {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px 15px;
+    padding: 15px 15px;
+    justify-content: space-evenly; 
+}
+.thingContainer {
+    display: flex;
+    justify-content: space-between; 
+    max-width: 100%; 
+    margin: 0 auto;
+}
+
+.things {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 10px; 
+}
+
+.item h3 {
+    font-size: 1.5em; 
+    margin-bottom: 0; 
+}
+
+.content {
+    display: grid;
+    gap: 5px;
+}
+
+.content p {
+    margin: 0;
+}
+
+.thingsAnchor {
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+.thingsAnchor:hover {
+    text-decoration:underline;
+}
 
 
 
