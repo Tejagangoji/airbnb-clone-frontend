@@ -1,0 +1,73 @@
+.helpCentre{
+    width: 100vw;
+    
+}
+.helpCentreWrap {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+.helpComponent {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; 
+}
+
+.formHelp {
+  margin-top: 20px; /* Optional: Adjust top margin */
+}
+
+.inputSearch {
+  padding: 10px;
+  width: 400px; /* Adjust width as needed */
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+.searchBtn {
+  background-color: rgb(220, 70, 95);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50%;
+    width: 27%;
+    height: 50%;
+}
+
+.searchBtn:hover {
+  background-color: rgb(145, 64, 64) /* Darker shade on hover */
+}
+
+.searchBtn:focus {
+  outline: none; /* Remove focus outline */
+}
+
+.searchBtn svg {
+  vertical-align: middle;
+  margin-right: 5px; /* Optional: Adjust icon margin */
+}
+
+.inputWithButton {
+  position: relative;
+  height: 100px;
+  width : 200px;
+}
+
+.inputWithButton input{
+    height: 65px;
+    padding: 0px 60px 0px 0px;
+    width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    font-size: 16px;
+}
+
+.inputWithButton button {
+    left: 335px;
+    position: absolute;
+    top: 6px;
+}
