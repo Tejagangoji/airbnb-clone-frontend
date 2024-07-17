@@ -8,7 +8,7 @@
     margin: 0 auto;
 }
 .helpComponent {
-  height: 30%;
+  height: 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -67,7 +67,102 @@
 }
 
 .inputWithButton button {
-    left: 335px;
+    left: 331px;
     position: absolute;
-    top: 6px;
+    top: -2px;
+}
+.FilterSpan {
+  margin: 10px;
+}
+button {
+  margin: 10px;
+  border: none;
+  background-color: white;
+}
+.Block {
+  padding: 10px;
+  border: 1px solid #ccc; 
+   border-radius: 20px;
+}
+
+.block-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+
+.block1 {
+  flex: 1;
+}
+
+.block2 {
+  
+  padding: 10px;
+}
+
+.block2 button {
+  width: 100%;
+  background-color: rgb(206, 81, 81);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.block2 button:hover {
+  background-color: #df161d;
+}
+
+.browserdiv {
+    display: flex;
+    align-items: center; 
+    padding: 20px;
+    background-color: #fff;
+    border:none;
+}
+.browserguiding {
+  flex: 1;
+  margin: 10px;
+}
+
+.BrowseArrow {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+   display: flex;
+   margin: 20px;
+}
+.BrowseArrow:hover {
+  text-decoration: underline;
+}
+.imagesContainer {
+  width: 80%;
+  object-fit: cover;
+  border-radius: 30px;
+  margin: 10px 5px 20px 10px;
+}
+
+.images {
+  border-radius: 12px;
+}
+
+
+.articlesContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 10px; 
+ 
+}
+.articleLink {
+  margin: 5px;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+.articleGrid {
+   padding: 20px;
+  
 }
