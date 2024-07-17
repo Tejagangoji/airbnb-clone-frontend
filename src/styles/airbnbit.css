@@ -1,0 +1,385 @@
+.Homes {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; 
+    padding: 20px;
+    overflow-x: hidden;
+    height: 100vh;
+  }
+  
+  .page1 {
+    display: flex;
+    width: 100%; 
+  }
+  
+  .part1,
+  .part2 {
+    flex: 1; 
+    padding: 20px; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 90vh;
+  }
+  
+  .part2 {
+    border: 1px solid black;
+    border-radius: 1rem;
+  }
+  
+  .part1head h2 {
+    font-weight: bold;
+    color: #fd0808;
+    margin-top: -3rem;
+  }
+  
+  .part1head {
+    margin-top: -7rem;
+  }
+  
+  .part1head h3 {
+    margin-left: -1.5rem;
+    font-weight: 600;
+  }
+  
+  .page2 {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .img {
+    margin-top: 2rem;
+  }
+  
+  .imgcontent {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    width: 80vw;
+  }
+  
+  .cont1 h5 {
+    font-weight: 550;
+    margin-top: 2rem;
+  }
+  
+  .page3 {
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 9rem;
+  }
+  
+  .banhead {
+    color: red;
+  }
+  
+  .banheading {
+    margin-left: -20rem;
+    margin-top: 10rem;
+  }
+  
+  .tabbanner {
+    margin-left: 50rem;
+    margin-top: 1rem;
+  }
+  
+  .tabban {
+    gap: 6rem;
+    display: flex;
+  }
+  
+  .divider {
+    border-bottom: 1px solid black;
+    margin-left: -42rem;
+    width: 80vw;
+  }
+  
+  .tabhead {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .items {
+    margin-left: 0.9rem;
+  }
+  
+  #items3 {
+    margin-left: -2rem;
+  }
+  
+  .item {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .custom-table {
+    width: 80%;
+    margin-left: 9rem;
+    margin-top: 2rem;
+  }
+  
+  .custom-table th {
+    font-size: larger;
+    padding: 1rem;
+    border-bottom: 2px solid rgb(182, 182, 182);  
+  }
+  
+  .divider-row  {
+    width: 90vw;
+
+  }
+  .spanrow {
+    width: 60vw;
+    column-span: 1;
+    border-bottom: 1.7px solid rgb(182, 182, 182); 
+  }
+  
+  .custom-table td {
+    padding: 5px;
+    margin-left: 2rem;
+  }
+  
+  .dividerrow{
+    border-bottom: 1px solid rgb(182, 182, 182); 
+  
+  }
+  
+  .tdhead {
+    font-weight: bold;
+  }
+  .checkmark{
+    color: green;
+    margin-left: 1.5rem;
+    height: 4vh;
+    width: 3rem;
+  }
+  .checkmark1{
+    margin-left: 4rem;
+    color:green;
+    height: 4vh;
+    width: 3rem;
+  }
+  .crossicon{
+    margin-left: 4rem;
+    color: #fd0808;
+    height:3vh;
+    width: 2rem;
+  }
+  .lasttr{
+    width: 100vw;
+    margin-left: 10rem;
+    margin-top: 1rem;
+  }
+  .leranbtn{
+    margin-left: 35rem;
+    padding: 10px;
+    width: 10vw;
+  }
+
+  .page4{
+    margin-top: 3rem;
+    display: flex;
+   background-color: rgb(254, 254, 246);
+  
+  }
+  .page4warp{
+    display: flex;
+    flex-direction: row;
+    gap: 7rem;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    margin-left: 3rem;
+    
+  }
+    .Qs {
+      margin-top: 1rem;
+  
+    }
+    
+    .question {
+      border-bottom: 1px solid #ccc; 
+    }
+    .question-header {
+      padding: 5px;
+      cursor: pointer;
+    }
+    
+    .answer {
+      margin-top: 1px;
+    }
+    .lastpage{
+      background-color: rgb(254, 254, 246);
+    }
+    .lpagewrap{
+      display: flex;
+      flex-direction: row;
+      padding: 1rem;
+      justify-content: center;
+      align-items: center;
+      gap: 5rem;
+  
+    }
+    .page4img{
+      margin-left: -7rem;
+     
+    }
+    .lpageban{
+      width: 90vw;
+      height: auto;
+      background-color: white;
+      display: flex;
+      flex-direction: row;
+      padding: 1rem;
+      justify-content: center;
+      align-items: center;
+      gap: 5rem;
+      border-radius: 2rem;
+      margin-top: 2rem;
+    }
+    .lastbtn{
+      border-radius: 5px;
+      padding: 7px;
+   
+    }
+    .links{
+      text-decoration: none;
+      color: black;
+    }
+   
+    
+
+  @media (max-width: 768px) {
+    .imgcontent {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+  
+    .page1 {
+      align-items: stretch;
+      flex-direction: column;
+      margin-top: 8rem;
+    }
+  
+    .tabbanner {
+      margin-left: 20rem;
+      margin-top: 1rem;
+    }
+  
+    .tabban {
+      margin-left: 5rem;
+      gap: 0rem;
+      display: flex;
+    }
+  
+    .divider {
+      margin-left: -21rem;
+      width: 95vw;
+    }
+  
+    .tabhead {
+      gap: 3rem;
+      margin-left: -6.5rem;
+      padding: 5px;
+    }
+  
+    .custom-table {
+      width: 95%;
+      margin: 0 auto;
+      margin-top: 2rem;
+    }
+  
+    .custom-table th {
+      padding: 1.5rem;
+    }
+  
+    .custom-table td {
+      padding: 0.5rem;
+    }
+    .leranbtn{
+     margin-left: 15rem;
+     width: 20vw;
+    }
+    .lasttr{
+      margin-left: 1rem;
+      width: 90vw;
+    }
+    .lpagewrap{
+      flex-direction: column;
+    }
+    .page4img{
+      margin-left: 1rem;
+      margin-top: 2rem;
+    }
+    .lpageban{
+      display: flex;
+      flex-direction:column ;
+    }
+    
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px){
+    .spanrow {
+      width: 50vw;
+      border-bottom: 1px solid black; 
+      column-span: 1;
+    }
+    .leranbtn{
+      margin-left: 25rem;
+      width: 20vw;
+     }
+     .lasttr{
+      margin-left: 10rem;
+      width: 70vw;
+    }
+    
+    .page4img{
+     margin-left: 1rem;
+    }
+    
+  }
+
+  @media (max-width: 480px){
+    .table-container{
+      font-size: small;
+    }
+    .crossicon{
+      margin-left: 2rem;
+      color: #fd0808;
+      height:3vh;
+      width: 2rem;
+    }
+    .checkmark1{
+      margin-left: 2rem;
+      color:green;
+      height: 4vh;
+      width: 3rem;
+    }
+    .page3ban{
+      margin-left: -5rem;
+    }
+    .banheading {
+      margin-left: -15rem;
+      margin-top: 15rem;
+      
+    }
+    .leranbtn{
+      margin-left: 5.5rem;
+     }
+  
+   .page4warp{
+    display: flex;
+  flex-direction: column;
+   }
+  
+  }
+
+  

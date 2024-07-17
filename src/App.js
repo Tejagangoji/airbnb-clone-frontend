@@ -6,6 +6,7 @@ import Context from './context/Context';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Login from './pages/Login';
+import Airbnbit from './pages/Airbnbit';
 
 const Withnavandfooter = () => {
   return (
@@ -24,6 +25,9 @@ function App() {
         <Routes>
           <Route exact path='/' element={<Withnavandfooter />}>
             <Route exact path='/' element={<Home />} />
+          </Route>
+          <Route exact path='/host/homes' element={<Withnavandfooter />}>
+            <Route exact path='/host/homes' element={<Airbnbit/>} />
           </Route>
           <Route exact path='/login' element={<Login />} />
         </Routes>

@@ -101,7 +101,13 @@
   
    /* Styles for laptop devices */
    @media (min-width: 769px) and (max-width: 1024px) {
-   
+  
+   .horizantal{
+   display: flex;
+   flex-direction: row;
+    margin-left: 15rem;
+    width: 50vw;
+   }
      .head h5 {
       margin-left: -5rem;
     }
