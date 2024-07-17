@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Context from './context/Context';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Login from './pages/Login';
 
 const Withnavandfooter = () => {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route exact path='/' element={<Withnavandfooter />}>
             <Route exact path='/' element={<Home />} />
           </Route>
+          <Route exact path='/login' element={<Login />} />
         </Routes>
       </Context>
     </BrowserRouter>

@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+  }
+  
+  .login {
+    width: 50vw;
+    height: 70vh;
+    margin-left: 20rem;
+  }
+  
+  .loginwrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+    flex-direction: column;
+    border: 1px solid black;
+  }
+  
+  .head {
+    text-align: center;
+    padding: 1rem;
+    width: 50vw;
+    border-bottom: 1px solid rgb(225, 223, 223);
+    display: flex;
+    flex-direction: row; 
+    gap: 13rem;
+  }
+  .section{
+    overflow-y: scroll;
+    height: 73vh;
+    width: 50vw;
+    
+    
+  }
+  .section2{
+    padding: 1rem;
+  }
+  .horizantal{
+    margin-top: -1rem;
+    display: flex;
+    flex-direction:row ;
+  }
+  .divider{
+    width: 50%;
+    margin-left: 1rem;
+  }
+  .icon{
+    font-size: 1.5rem;
+  }
+  .items{
+    display: flex;
+    flex-direction: row; 
+    gap: 10rem;
+  }
+  
+   
+  @media (max-width: 768px) {
+    .login {
+      width: 90vw; 
+   margin-left: 2rem;
+    }
+    .section{
+      width: 90vw;
+    }
+    .divider {
+      width: 50vw; 
+    
+    }
+    .head {
+        width: 90vw;
+    }
+    .head h5 {
+      margin-left: -2rem;
+    }
+    .horizantal{
+      margin-top: -1rem;
+      display: flex;
+      flex-direction:row ;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .items{
+      display: flex;
+      flex-direction: row; 
+      gap: 1rem;
+    }
+    .head h5 {
+      margin-left: -10rem;
+    }
+   .horizantal{
+    margin-left:17rem;
+    display: flex;
+    flex-direction: row;
+   }
+   
+  }
+  
+   /* Styles for laptop devices */
+   @media (min-width: 769px) and (max-width: 1024px) {
+   
+     .head h5 {
+      margin-left: -5rem;
+    }
+    
+   }
