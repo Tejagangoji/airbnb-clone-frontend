@@ -1,0 +1,137 @@
+.helparticlepage{
+    padding: 0;
+    width: 90vw;
+}
+.articlewrap{
+    width: 90vw;
+    display: flex;
+    overflow-x: hidden;
+}
+.articlebanner{
+   width: 90vw;
+    margin-left: 5rem;
+    margin-top: 2rem;
+   
+}
+.arthead{
+    margin-bottom: 1rem;
+}
+
+.artcleheading{
+   display: flex;
+   flex-direction: row;
+   gap: 4rem;
+   justify-content: center;
+   margin-top: 1rem;
+}
+.imgcont{
+    margin-top: 1rem;
+ display: flex;
+ width: 50vw;
+}
+.articlebtn{
+    width: 23vw;
+    height: 25vh;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border: 1px solid rgb(205, 204, 204);
+    margin-top: -1.5rem;
+}
+.btnart{
+    padding: 5px;
+    background-color: rgb(236, 23, 83);
+    width: 18vw;
+    border-radius: 10px;
+}
+.comm{
+    margin: 2rem 0;
+}
+.commparagraph{
+    margin:1rem 0rem;
+}
+.hostrel h5{
+text-decoration: underline;
+font-size: large;
+
+}
+.hostrel {
+    border-bottom: 1px solid rgb(205, 200, 200);
+    margin: 1rem 0;
+}
+.getting{
+    margin-top: 2rem;
+    border-bottom: 1px solid rgb(205, 200, 200);
+}
+.articlehelping{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    padding: 2rem;
+    margin-left: -2rem;
+    border-bottom: 1px solid rgb(205, 200, 200);
+}
+.heplines{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px){
+    .artcleheading{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-left: -2rem;
+        gap: 2rem;
+    }
+    .articleimg{
+        width: 83vw;
+    }
+    .imgcont{
+        width: 83vw; 
+    }
+    .articlebtn{
+        display: flex;
+        margin-left: 7rem;
+        width: 50vw;
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+    .btnart{
+        width: 40vw; 
+    }
+    .comm{
+        width: 83vw;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    .artcleheading{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+    .articleimg{
+        width: 83vw;
+    }
+    .imgcont{
+        width: 80vw; 
+    }
+    .articlebtn{
+        display: flex;
+        margin-left: 7rem;
+        width: 50vw;
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+    .btnart{
+        width: 40vw; 
+    }
+    .comm{
+        width: 80vw;
+    }
+}

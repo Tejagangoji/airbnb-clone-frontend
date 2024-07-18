@@ -1,0 +1,230 @@
+
+.helppage {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    padding: 20px;
+    overflow-x: hidden;
+    height: 100vh;
+  }
+  
+  .helpwrap {
+    display: flex;
+    justify-content: center;
+  }
+  .heading{
+    margin-left: 3rem;
+}
+ 
+  .hepbanner {
+    margin-top: 2rem;
+  }
+ 
+  .admins {
+    margin-top: -2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .image {
+    margin: 10px;
+    text-align: center;
+  }
+  .imghead{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  .img{   
+  overflow: hidden;
+  border-radius: 2rem;
+  }
+  
+  
+
+  .last {
+    background-color: black;
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .banheader{
+    color: #ffffff;
+    margin: 1rem 0;
+
+  }
+  
+  .lastban {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+   
+  }
+  
+  .lastimg1 ,.lastimg2 {
+    border-radius: 1rem;
+    background-color: rgb(87, 86, 86);
+    color: white; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+   
+  }
+  
+  .limg {
+    border-radius: 1rem 1rem 0 0;
+    overflow: hidden;
+  }
+  
+  .ltittle {
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .cont {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    width: 25vw;
+    color: #ffffff;
+  }
+  .lastbtn{
+    padding: 10px;
+    width: 15vw;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+  }
+  .links{
+    color:#ffffff;
+    text-decoration: underline;
+  }
+  
+ 
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .admins {
+        width: 70vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 8rem;
+    }
+    .img{
+       width: 20vw;
+       margin-left: 2rem;
+    }
+    .heading{
+        margin-left: 5rem;
+    }
+    .last{
+        display: flex;
+        width: 100vw;
+    }
+    .lastban{
+        display: flex;
+        margin-top: 15rem;
+ 
+    }
+    .lastban {
+        display: flex;
+      height: 20vh;
+      width: 100vw;
+     gap: 3rem;
+     margin-top: 2rem;
+    }
+    .lastimg1 , .lastimg2{
+        height: 50vh;
+        width:30vw;
+        margin-top: -1rem;
+      
+    }
+    .limg {
+        height: 30vh;
+        width: 30vw;
+        object-fit: cover;
+        display: flex;
+        border-radius: 1rem 1rem  0 1rem ;
+    }
+    .banheader{
+        color: #ffffff;
+        margin-top: -10rem;
+        margin-left: 1rem;
+      }
+      .cont{
+        margin-top: -2rem;
+      }
+
+
+
+  }
+ 
+
+ @media (max-width: 768px) {
+    .img{
+        display: none;
+    }
+    .imghead{
+        border-bottom: 1px solid rgb(211, 208, 208);
+        width: 70vw;
+    }
+    .admins {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0.5rem;
+    }
+    .last{
+        display: flex;
+       margin-left: 2rem;
+       height: 100vh;
+    }
+    .lastban {
+        display: flex;
+      height: 20vh;
+      width: 100vw;
+     gap: 3rem;
+    }
+    .lastimg1 , .lastimg2{
+        height: 20vh;
+        width: 80vw;
+        flex-direction: row;
+        margin-top: -2rem;
+      
+    }
+    .limg {
+        height: 20vh;
+        width: 30vw;
+        object-fit: cover;
+        display: flex;
+        border-radius: 1rem 0  0 1rem ;
+    }
+    .banheader{
+       margin: -15rem 0rem 3rem 5rem;
+    }
+    .cont {
+        width: 100vw;
+        margin-top: -2rem;
+    }
+    .lastbtn{
+        width: 30vw;
+    }
+
+ }
+
+ @media (max-width: 576px) {
+   
+   .cont{
+    width: 70vw;
+   }
+   .lastbtn{
+    width: 50vw;
+   }
+   .limg {
+    object-fit: cover;
+    display: flex;
+   }
+ }
+  
