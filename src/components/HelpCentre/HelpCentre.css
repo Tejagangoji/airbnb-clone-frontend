@@ -17,12 +17,12 @@
 }
 
 .formHelp {
-  margin-top: 20px; /* Optional: Adjust top margin */
+  margin-top: 20px; 
 }
 
 .inputSearch {
   padding: 10px;
-  width: 400px; /* Adjust width as needed */
+  width: 400px;
   border: 1px solid #ccc;
   border-radius: 20px;
   font-size: 16px;
@@ -39,16 +39,16 @@
 }
 
 .searchBtn:hover {
-  background-color: rgb(145, 64, 64) /* Darker shade on hover */
+  background-color: rgb(145, 64, 64)
 }
 
 .searchBtn:focus {
-  outline: none; /* Remove focus outline */
+  outline: none; 
 }
 
 .searchBtn svg {
   vertical-align: middle;
-  margin-right: 5px; /* Optional: Adjust icon margin */
+  margin-right: 5px;
 }
 
 .inputWithButton {

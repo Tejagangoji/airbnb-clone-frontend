@@ -1,10 +1,14 @@
 import {
   ArticlesData,
+  ExperienceHostImages,
   GuestImages,
+  HostImages,
+  TravelImages,
 } from "../../ApiData/ProductDetails/HelpCentre/HelpCentre";
 import "./HelpCentre.css";
 import { RiSearchLine as SearchIcon } from "react-icons/ri";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { useState } from "react";
 
 export function Header() {
   const handleSubmit = (e) => {
@@ -26,14 +30,27 @@ export function Header() {
     </div>
   );
 }
-export function Filtering() {
+export function Filtering(props) {
+  const handleOnclick = (event) => {
+    props.handleButtonClick(event.target.value);
+  };
+
   return (
     <div>
       <span className="FilterSpan">
-        <button> Guest</button>
-        <button>Host</button>
-        <button>Experience Host</button>
-        <button>Travel admin</button>
+        <button value={"Guest"} onClick={(e) => handleOnclick(e)}>
+          {" "}
+          Guest
+        </button>
+        <button value={"Host"} onClick={(e) => handleOnclick(e)}>
+          Host
+        </button>
+        <button value={"Experience"} onClick={(e) => handleOnclick(e)}>
+          Experience Host
+        </button>
+        <button value={"Travel"} onClick={(e) => handleOnclick(e)}>
+          Travel admin
+        </button>
       </span>
       <hr />
     </div>
@@ -69,10 +86,23 @@ export function BrowseInfo() {
     </div>
   );
 }
-export function ImageCard() {
+export function ImageCard(props) {
+  function image() {
+    let imageCards = [];
+    if (props.selectedButton === "Guest") {
+      imageCards = GuestImages;
+    } else if (props.selectedButton === "Host") {
+      imageCards = HostImages;
+    } else if (props.selectedButton === "Experience") {
+      imageCards = ExperienceHostImages;
+    } else if (props.selectedButton === "Travel") {
+      imageCards = TravelImages;
+    }
+    return imageCards;
+  }
   return (
     <div style={{ display: "flex" }}>
-      {GuestImages?.map((item, index) => {
+      {image()?.map((item, index) => {
         console.log(item);
         return (
           <div className="imagesContainer">
@@ -83,7 +113,12 @@ export function ImageCard() {
               width="90%"
               height="100%"
             />
-            <h6>{item.title}</h6>
+            <a
+              style={{ textDecoration: "none", color: "black" }}
+              href={item.link}
+            >
+              {item.title}
+            </a>
           </div>
         );
       })}
@@ -114,14 +149,20 @@ export function Articles() {
 }
 
 export default function HelpCentre() {
+  const [selectedButton, setSelectedButton] = useState("");
+
+  const handleClick = (selectedButton) => {
+    setSelectedButton(selectedButton);
+  };
+
   return (
     <div className="helpCentre">
       <div className="helpCentreWrap">
         <Header />
-        <Filtering />
+        <Filtering handleButtonClick={handleClick} />
         <UserInfo />
         <BrowseInfo />
-        <ImageCard />
+        <ImageCard selectedButton={selectedButton} />
         <Articles />
       </div>
     </div>

@@ -11,18 +11,22 @@ export const GuestImages = [
   {
     img: IMG1,
     title: "Getting started with Airbnb",
+    link: "",
   },
   {
     img: IMG2,
     title: "Access and manage your account",
+    link: "",
   },
   {
     img: IMG3,
     title: "Help with a reservation",
+    link: "",
   },
   {
     img: IMG4,
     title: "AirCover for guests",
+    link: "",
   },
 ];
 
@@ -36,7 +40,7 @@ export const HostImages = [
     title: "Help with a reservation",
   },
   {
-    img: IMG3,
+    img: IMG6,
     title: "AirCover for guests",
   },
   {
@@ -46,16 +50,40 @@ export const HostImages = [
 ];
 
 export const ExperienceHostImages = [
-  "../../../assets/HelpCentre/Guests/1.jpg",
-  "../../../assets/HelpCentre/Guests/5.jpg",
-  "../../../assets/HelpCentre/Guests/3.jpg",
-  "../../../assets/HelpCentre/Guests/7.jpg",
+  {
+    img: IMG2,
+    title: "Getting started with Airbnb",
+  },
+  {
+    img: IMG5,
+    title: "Help with a reservation",
+  },
+  {
+    img: IMG6,
+    title: "AirCover for guests",
+  },
+  {
+    img: IMG7,
+    title: "Access and manage your account",
+  },
 ];
 export const TravelImages = [
-  "../../../assets/HelpCentre/Guests/1.jpg",
-  "../../../assets/HelpCentre/Guests/5.jpg",
-  "../../../assets/HelpCentre/Guests/8.jpg",
-  "../../../assets/HelpCentre/Guests/2.jpg",
+  {
+    img: IMG2,
+    title: "Getting started with Airbnb",
+  },
+  {
+    img: IMG1,
+    title: "Help with a reservation",
+  },
+  {
+    img: IMG4,
+    title: "AirCover for guests",
+  },
+  {
+    img: IMG8,
+    title: "Access and manage your account",
+  },
 ];
 
 export const ArticlesData = [
