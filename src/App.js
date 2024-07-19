@@ -7,11 +7,21 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer/Footer";
 import ProductDetails from "./components/ProductDetails/ProductDetails";
 import HelpCentre from "./components/HelpCentre/HelpCentre";
+import GswAirbnb from "./pages/GswAirbnb";
 
 const Withnavandfooter = () => {
   return (
     <>
       <Navbar />
+      <Outlet />
+      <Footer />
+    </>
+  );
+};
+
+const WithFooterandOutlet = () => {
+  return (
+    <>
       <Outlet />
       <Footer />
     </>
@@ -31,6 +41,9 @@ function App() {
           </Route>
           <Route exact path="/HelpCentre" element={<Withnavandfooter />}>
             <Route exact path="/HelpCentre" element={<HelpCentre />} />
+          </Route>
+          <Route exact path="/GswAirbnb" element={<WithFooterandOutlet />}>
+            <Route exact path="/GswAirbnb" element={<GswAirbnb />} />
           </Route>
         </Routes>
       </Context>

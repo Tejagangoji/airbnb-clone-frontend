@@ -149,7 +149,7 @@ export function Articles() {
 }
 
 export default function HelpCentre() {
-  const [selectedButton, setSelectedButton] = useState("");
+  const [selectedButton, setSelectedButton] = useState("Guest");
 
   const handleClick = (selectedButton) => {
     setSelectedButton(selectedButton);
