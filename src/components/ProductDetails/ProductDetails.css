@@ -1,0 +1,313 @@
+.productDetails {
+    width: 100vw;
+}
+.productDetailsWrap {
+    width: 90%;
+    margin: 0 auto;
+}
+.container {
+    display: flex;
+    align-items: center; 
+    padding: 20px;
+    background-color: #fff;
+    border:none;
+}
+
+@media (min-width: 1200px) {
+    .container{
+        max-width: 1300px;
+    }
+}
+
+.heading {
+    flex: 1; 
+}
+
+.actions {
+    display: flex;
+}
+
+
+button.share, button.save {
+    margin-left: 10px; 
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+button.share:hover, button.save:hover {
+    background-color: #f0f0f0; 
+    transform: translateY(-3px); 
+}
+
+.buttonHover {
+    margin-right: 5px; 
+}
+
+
+.cartText {
+    vertical-align: middle; 
+}
+
+
+
+
+
+.gridContainer {
+    height:90%;
+    display: flex;
+    object-fit: cover;
+}
+
+.leftImage {
+    object-fit: cover;
+    width: 95%;
+    height: 182%;
+    padding: 0px 0px 10px 50px;
+}
+
+.childGrid {
+    object-fit: cover;
+    height: 500px;
+    padding: 0px !important;
+}
+
+.exploreContainer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 10px 20px;
+}
+
+.block1 {
+    flex: 1;
+    padding: 2vw;
+    border-radius: 2vw;
+    width: 50%;
+    background-color: #ffffff;
+}
+
+.block2 {
+    flex: 1;
+    padding: 2vw;
+    border-radius: 2vw; 
+    background-color: #ffffff;
+    display: flex;
+    width: 20%;
+    margin-left: 10rem;
+    justify-content: center; 
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.requestContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.block2Content {
+    text-align: center;
+    padding: 10px;
+    margin: 0px;
+    padding: 10px;
+
+}
+
+.requestButton {
+    background-color: #d6475a; 
+    color: white; 
+    font-size: 1vw; 
+    border: none;
+    gap: 1rem;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 2vw; 
+    transition: background-color 0.3s ease;
+}
+
+.requestButton:hover {
+    background-color: #ad4848;
+}
+.instruction {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.instructIcons {
+    width: 24px; 
+    margin-right: 10px; 
+    flex-shrink: 0; 
+    align-self: flex-start; 
+}
+
+.instruction-text {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+}
+
+.instruction-text p, .instruction-text small {
+    margin: 0; 
+    margin-left: 10px;
+}
+.descriptionContainer {
+    width: 52%;
+}
+.para1 {
+    margin: 10px 0;
+}
+.para2 h5 {
+    margin: 0;
+}
+.para2 p {
+    margin-bottom: 10px;
+}
+.para3 {
+    margin: 10px 0;
+}
+.list ul li{
+    margin: 0;
+}
+.hostingProfile {
+    height: 10%;
+}
+.left-block {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    width: 30%;
+    border: 1px solid #ccc;
+    border-radius: 20%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); 
+    
+}
+
+
+.image-column {
+    margin-left: 30px;
+}
+
+.profile-image {
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+}
+
+.content-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.number {
+    font-size: 24px;
+    font-weight: bolder;
+
+}
+
+.small-element {
+    margin-top: 5px;
+    color: black;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    font-weight: bolder;
+}
+
+.star-icon {
+    color: black;
+    margin-right: 5px;
+}
+
+.hosting {
+    margin-top: 2px;
+    color: black;
+}
+.centered-container {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center;
+  margin-top: 50px; 
+}
+
+.centered-container img {
+  max-width: 40%; 
+}
+.centered-container h2 {
+  margin-top: 20px; 
+}
+
+.centered-container p {
+  margin-top: 10px; 
+}
+.InformationContainer {
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+
+}
+.Inform {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px 15px;
+    padding: 15px 15px;
+    justify-content: space-evenly; 
+}
+.thingContainer {
+    display: flex;
+    justify-content: space-between; 
+    max-width: 100%; 
+    margin: 0 auto;
+}
+
+.things {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 10px; 
+}
+
+.item h3 {
+    font-size: 1.5em; 
+    margin-bottom: 0; 
+}
+
+.content {
+    display: grid;
+    gap: 5px;
+}
+
+.content p {
+    margin: 0;
+}
+
+.thingsAnchor {
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+.thingsAnchor:hover {
+    text-decoration:underline;
+}
+
+
+
+
+

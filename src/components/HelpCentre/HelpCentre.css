@@ -1,0 +1,168 @@
+.helpCentre{
+    width: 100vw;
+    
+}
+.helpCentreWrap {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+.helpComponent {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; 
+}
+
+.formHelp {
+  margin-top: 20px; 
+}
+
+.inputSearch {
+  padding: 10px;
+  width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+.searchBtn {
+  background-color: rgb(220, 70, 95);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50%;
+    width: 27%;
+    height: 50%;
+}
+
+.searchBtn:hover {
+  background-color: rgb(145, 64, 64)
+}
+
+.searchBtn:focus {
+  outline: none; 
+}
+
+.searchBtn svg {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.inputWithButton {
+  position: relative;
+  height: 100px;
+  width : 200px;
+}
+
+.inputWithButton input{
+    height: 65px;
+    padding: 0px 60px 0px 0px;
+    width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    font-size: 16px;
+}
+
+.inputWithButton button {
+    left: 331px;
+    position: absolute;
+    top: -2px;
+}
+.FilterSpan {
+  margin: 10px;
+}
+button {
+  margin: 10px;
+  border: none;
+  background-color: white;
+}
+.Block {
+  padding: 10px;
+  border: 1px solid #ccc; 
+   border-radius: 20px;
+}
+
+.block-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+
+.block1 {
+  flex: 1;
+}
+
+.block2 {
+  
+  padding: 10px;
+}
+
+.block2 button {
+  width: 100%;
+  background-color: rgb(206, 81, 81);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.block2 button:hover {
+  background-color: #df161d;
+}
+
+.browserdiv {
+    display: flex;
+    align-items: center; 
+    padding: 20px;
+    background-color: #fff;
+    border:none;
+}
+.browserguiding {
+  flex: 1;
+  margin: 10px;
+}
+
+.BrowseArrow {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+   display: flex;
+   margin: 20px;
+}
+.BrowseArrow:hover {
+  text-decoration: underline;
+}
+.imagesContainer {
+  width: 80%;
+  object-fit: cover;
+  border-radius: 30px;
+  margin: 10px 5px 20px 10px;
+}
+
+.images {
+  border-radius: 12px;
+}
+
+
+.articlesContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 10px; 
+ 
+}
+.articleLink {
+  margin: 5px;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+.articleGrid {
+   padding: 20px;
+  
+}
