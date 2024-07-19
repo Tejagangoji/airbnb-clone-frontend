@@ -2,6 +2,8 @@ import { RiSearchLine as SearchIcon } from "react-icons/ri";
 import "../pages/GswAirbnb.css";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import img1 from "../assets/HelpCentre/Guests/1.jpg";
+import HelpCenterIcon from "@mui/icons-material/HelpCenter";
+
 export function HomeIcon() {
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -9,6 +11,8 @@ export function HomeIcon() {
   return (
     <div>
       <form className="formHelp" onSubmit={handleSubmit}>
+        <HelpCenterIcon style={{ width: "5rem", height: "5rem" }} />
+        Help Centre
         <div class="inputWithButton" style={{ left: "35%" }}>
           <input type="search" placeholder="Search how-tos and more"></input>
           <button type="submit" className="searchBtn">
@@ -246,6 +250,72 @@ export function HostArticle() {
     </div>
   );
 }
+export function RelArticle() {
+  return (
+    <div style={{ width: "52%", margin: "10px" }}>
+      <h4>Related articles</h4>
+      <a style={{ color: "grey", textDecoration: "none" }} href="Guest">
+        Guest
+      </a>{" "}
+      <br />
+      <a
+        style={{ color: "black", fontWeight: "bold" }}
+        href="Creating an account"
+      >
+        Creating an account
+      </a>
+      <p>
+        Signing up is free – use your email address, phone number, Facebook or
+        Google account, or Apple ID.
+      </p>
+      <hr />
+    </div>
+  );
+}
+export function BookArticle() {
+  return (
+    <div style={{ width: "52%", margin: "10px" }}>
+      <a style={{ color: "grey", textDecoration: "none" }} href="Guest">
+        Guest
+      </a>
+      <br />
+      <a
+        style={{ color: "black", fontWeight: "bold" }}
+        href="Booking a trip: what to do if you’re new"
+      >
+        Booking a trip: what to do if you’re new
+      </a>
+      <p>
+        Learn about Airbnb’s booking process, how to confirm your reservation,
+        special offers direct from a Host, and more.
+      </p>
+      <hr />
+    </div>
+  );
+}
+export function PayArticle() {
+  return (
+    <div style={{ width: "52%", margin: "10px" }}>
+      <h4>Related articles</h4>
+      <a style={{ color: "grey", textDecoration: "none" }} href="Guest">
+        Guest
+      </a>
+      <br />
+      <a
+        style={{ color: "black", fontWeight: "bold" }}
+        href="Paying for your trip"
+      >
+        Paying for your trip
+      </a>
+      <p>
+        When are you charged for a reservation? What do you do if you can’t
+        complete your transaction? Let’s break down the financials and get
+        answe…
+      </p>
+      <hr />
+    </div>
+  );
+}
 
 export default function GswAirbnb() {
   return (
@@ -265,6 +335,9 @@ export default function GswAirbnb() {
         <HostWays />
         <HostNewExp />
         <HostArticle />
+        <RelArticle />
+        <BookArticle />
+        <PayArticle />
       </div>
     </div>
   );

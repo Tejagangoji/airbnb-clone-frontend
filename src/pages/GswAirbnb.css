@@ -1,9 +1,11 @@
 .AirbnbCentre {
     width: 100vw;
+    max-height: 100%;
 }
 .AirbnbWrap {
     width: 90%;
     margin: 0 auto;
+    padding: 10px;
 }
 
 .homeComp {
@@ -36,9 +38,9 @@
   width: 30%;
   height: 10%;
   max-height: 100%;
-    margin: 20px 40px;
-    padding: 10px;
-  border: 1px solid black;
+  margin: 20px 40px;
+  padding: 10px;
+  border: 1px ;
   justify-content: center;
   text-align: center;
   border-radius: 20px;
@@ -47,14 +49,17 @@
 
 .guest-right button {
   width: 50%;
-  background-color: rgb(206, 81, 81);
+  background-color: rgb(225, 81, 131);
   color: white;
   border: none;
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
 }
-
+button {
+    border-radius: 10px;
+    
+}
 .guest-right button:hover {
-  background-color: #df161d;
+  background-color: #d14d63;
 }
