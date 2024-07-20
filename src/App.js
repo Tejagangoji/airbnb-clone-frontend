@@ -9,6 +9,7 @@ import Login from './pages/Login';
 import Airbnbit from './pages/Airbnbit';
 import Help from './pages/Help';
 import Article from './pages/Article';
+import Reservation from './pages/Reservation';
 
 const Withnavandfooter = () => {
   return (
@@ -36,6 +37,9 @@ function App() {
           </Route>
           <Route exact path='/help/article' element={<Withnavandfooter />}>
             <Route exact path='/help/article' element={<Article/>} />
+          </Route>
+          <Route exact path='/reservation' element={<Withnavandfooter />}>
+            <Route exact path='/reservation' element={<Reservation />} />
           </Route>
           <Route exact path='/login' element={<Login />} />
         </Routes>

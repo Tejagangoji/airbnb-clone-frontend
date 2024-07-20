@@ -1,0 +1,369 @@
+.confirmpay{
+    padding: 0;
+    margin: 0%;
+}
+.reservationwrap{
+    width: 90vw;
+    overflow-x: hidden;
+    margin-left: 2rem;
+}
+.bannerhead{
+    margin-top: 2rem;
+}
+.bannerhead1{
+    display: none;
+}
+.resvertionheading{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  
+}
+.leftpage{
+    width: 55vw; 
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+.leftpagehead{
+    margin-bottom: 1.5rem;
+}
+.paydate{
+    display: flex;
+    flex-direction: row;
+    gap: 24rem;
+    padding: 8px;
+}
+.editpage{
+    margin-left: 8.9rem;
+}
+.editpage1{
+    margin-left: 4rem;
+}
+.editpage2{
+    margin-left: 8.4rem;
+}
+.rightpage{
+    width: 50vw;
+    padding: 2rem;
+    height: 50vh;
+    border: 1px solid black;
+    border-radius: 1rem;
+}
+.resloginicons{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 1rem;
+}
+.resbtns{
+    width: 15vw;
+    gap: 2rem;
+    margin-left: -0.5rem;
+    padding: 2px;
+}
+.resbtn{
+    width: 50vw;
+    padding: 3px;
+}
+.iconres{
+    font-size:1.5rem;
+}
+.resloginicon{
+    width: 30vw;
+}
+
+.reservationhouse{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+.beanresi{
+    margin-top: 1rem;  
+}
+.pricedetail{
+    border-bottom: 1px solid rgb(171, 170, 170);
+    padding: 1rem;
+}
+.pricetotal{
+    display: flex;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    justify-content: space-between;
+}
+.pricespandetails{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+    .reservationwrap{
+        overflow: hidden;
+        display: flex;
+        width: 85vw;
+        margin-left: 4rem;
+    }
+    .resvertionheading{
+        display: flex;
+        flex-direction:column-reverse;
+        gap: 1rem;
+    }
+    .leftpage{
+        width: 82vw;
+        padding: 1rem;
+      margin-top: 5rem;
+    
+    }
+    .paydate{
+        display: flex;
+        flex-direction: row;
+        gap: 15rem;
+        padding: 5px;
+    }
+    .resbtns{
+        width: 22vw;
+        gap: 2rem;
+        margin-left: -0.5rem;
+        padding: 2px;
+    }
+    .resbtn{
+        width: 75vw;
+        padding: 3px;
+    }
+    .rightpage{
+        width: 70vw;
+        padding: 2rem;
+        height: 40vh;
+        margin-left: 2rem;
+        border: none;
+        
+    }
+    .pricedetail,.pricetotal{
+        border-bottom: 1px solid rgba(197, 195, 195, 0.5);
+        box-shadow: 0rem 10px 1px rgba(197, 195, 195, 0.5);
+        width: 90vw;
+        margin-top: 1.5rem;
+        margin-left: -4rem;
+        padding: 1rem;
+    }
+    .pricespandetails{
+        display: flex;
+        justify-content: space-around;
+        gap: 10rem;
+        margin-left: -3rem;
+    
+    }
+    .pricetotal{
+        display: flex;
+        gap: 17rem;
+        margin-left: -5rem;
+        justify-content: space-around;
+    }
+    .bannerhead1{
+        display: flex;
+     justify-content: center;
+        border-bottom: 1px solid rgb(171, 170, 170);
+        margin-bottom: 1rem;
+        align-items: center;
+    gap: 10rem;
+    margin-left: -10rem;
+    
+    }
+    .bannerhead{
+        display: none;
+    }
+    .reservationhouse{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        padding: 1rem;
+        width: 90vw;
+        margin-top: -2rem;
+    margin-left: -4rem;
+        border-bottom: 1px solid rgba(197, 195, 195, 0.5);
+        box-shadow: 0rem 10px 1px rgba(197, 195, 195, 0.5);
+    }
+}
+@media (max-width: 768px){
+    .reservationwrap{
+        overflow: hidden;
+        display: flex;
+        width: 85vw;
+
+    }
+    .resvertionheading{
+        display: flex;
+        flex-direction:column-reverse;
+        gap: 1rem;
+    }
+    .leftpage{
+        width: 82vw;
+        padding: 1rem;
+      margin-top: 5rem;
+    
+    }
+    .paydate{
+        display: flex;
+        flex-direction: row;
+        gap: 15rem;
+        padding: 5px;
+    }
+    .resbtns{
+        width: 22vw;
+        gap: 2rem;
+        margin-left: -0.5rem;
+        padding: 2px;
+    }
+    .resbtn{
+        width: 75vw;
+        padding: 3px;
+    }
+    .rightpage{
+        width: 70vw;
+        padding: 2rem;
+        height: 40vh;
+        margin-left: 2rem;
+        border: none;
+        
+    }
+    .pricedetail,.pricetotal{
+        border-bottom: 1px solid rgba(197, 195, 195, 0.5);
+        box-shadow: 0rem 10px 1px rgba(197, 195, 195, 0.5);
+        width: 90vw;
+        margin-top: 1.5rem;
+        margin-left: -4rem;
+        padding: 1rem;
+    }
+    .pricespandetails{
+        display: flex;
+        justify-content: space-around;
+        gap: 10rem;
+        margin-left: -3rem;
+    
+    }
+    .pricetotal{
+        display: flex;
+        gap: 17rem;
+        margin-left: -5rem;
+        justify-content: space-around;
+    }
+    .bannerhead1{
+        display: flex;
+     justify-content: center;
+        border-bottom: 1px solid rgb(171, 170, 170);
+        margin-bottom: 1rem;
+        align-items: center;
+    gap: 10rem;
+    margin-left: -10rem;
+    
+    }
+    .bannerhead{
+        display: none;
+    }
+    .reservationhouse{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        padding: 1rem;
+        width: 90vw;
+        margin-top: -2rem;
+    margin-left: -4rem;
+        border-bottom: 1px solid rgba(197, 195, 195, 0.5);
+        box-shadow: 0rem 10px 1px rgba(197, 195, 195, 0.5);
+    }
+}
+@media (max-width: 480px) {
+    .reservationwrap {
+        overflow: hidden;
+        display: flex;
+        width: 84vw;
+        
+    }
+    .resvertionheading{
+        display: flex;
+        flex-direction:column-reverse;
+        gap: 3rem;
+    }
+    .leftpage{
+        width: 85vw;
+        padding: 1rem;
+      margin-top: 5rem;
+    
+    }
+    .paydate{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        padding: 5px;
+    }
+    .resbtns{
+        width: 20vw;
+        gap: 1rem;
+        margin-left: -0.7rem;
+       
+    }
+    .resbtn{
+        width: 75vw;
+     padding: 3px;
+    }
+    .rightpage{
+        width: 60vw;
+        height: 40vh;
+        border: none;
+        
+    }
+    .pricedetail,.pricetotal{
+        border-bottom: 1px solid rgba(197, 195, 195, 0.5);
+        box-shadow: 0rem 10px 1px rgba(197, 195, 195, 0.5);
+        width: 90vw;
+        margin-top: 1.5rem;
+        margin-left: -4rem;
+        padding: 1rem;
+    }
+    .pricespandetails{
+        display: flex;
+        justify-content: space-around;
+        gap: 1rem;
+        margin-left: -2rem;
+    
+    }
+    .pricetotal{
+        display: flex;
+        gap: 7rem;
+        margin-left: -5rem;
+        justify-content: space-around;
+    }
+    .bannerhead1{
+        display: flex;
+     justify-content: center;
+        border-bottom: 1px solid rgb(171, 170, 170);
+        margin-bottom: 1rem;
+        align-items: center;
+    gap: 4rem;
+    margin-left: -4rem;
+    
+    }
+    .bannerhead{
+        display: none;
+    }
+    .reservationhouse{
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        padding: 2px;
+        width: 90vw;
+        margin-top: -2rem;
+        padding: 5px;
+        border-bottom: 1px solid rgba(197, 195, 195, 0.5);
+        box-shadow: 0rem 10px 1px rgba(197, 195, 195, 0.5);
+    }
+
+}
+
+
+
+
+
