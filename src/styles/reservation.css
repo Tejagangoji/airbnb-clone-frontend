@@ -34,13 +34,15 @@
     padding: 8px;
 }
 .editpage{
-    margin-left: 8.9rem;
+    margin-left: 3rem;
+    text-decoration: underline;
 }
 .editpage1{
-    margin-left: 4rem;
+    margin-left: 2.5rem;
+    text-decoration: underline;
 }
 .editpage2{
-    margin-left: 8.4rem;
+    margin-left: -2rem;
 }
 .rightpage{
     width: 50vw;
@@ -97,6 +99,27 @@
     display: flex;
     justify-content: space-between;
 
+}
+.guestsSection{
+    border: 1px solid black;
+    background-color: antiquewhite;
+    margin-left: -10rem;
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+    justify-content: space-around;
+    align-items: center;
+}
+.totalguests{
+    margin-left: -18.8rem;
+    margin-top: 1rem;
+}
+.selectdate{
+    margin-left: -21.2rem;
+}
+.selecteddate{
+    margin-left: -24.5rem;
+    margin-top: 1.4rem;
 }
 
 @media (min-width: 769px) and (max-width: 1024px){
@@ -186,6 +209,30 @@
         border-bottom: 1px solid rgba(197, 195, 195, 0.5);
         box-shadow: 0rem 10px 1px rgba(197, 195, 195, 0.5);
     }
+    .editpage{
+        margin-left: 20rem;
+        text-decoration: underline;
+    }
+    .editpage1{
+        margin-left: 19.5rem;
+        text-decoration: underline;
+    }
+    .editpage2{
+        margin-left: -60rem;
+    }
+    .selectdates{
+        margin-left: -38.2rem;
+    }
+    .guestsSection{
+        border: 1px solid black;
+        background-color: antiquewhite;
+        margin-left: -20rem;
+        display: flex;
+        flex-direction: column;
+        width: 20vw;
+        justify-content: space-around;
+        align-items: center;
+    }
 }
 @media (max-width: 768px){
     .reservationwrap{
@@ -274,6 +321,21 @@
         border-bottom: 1px solid rgba(197, 195, 195, 0.5);
         box-shadow: 0rem 10px 1px rgba(197, 195, 195, 0.5);
     }
+    .selecteddate{
+        margin-left: -21rem;
+        margin-top: 1.4rem;
+    }
+   .guestsSection{
+        border: 1px solid black;
+        background-color: antiquewhite;
+        margin-left: -24rem;
+        display: flex;
+        flex-direction: column;
+        width: 20vw;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
 }
 @media (max-width: 480px) {
     .reservationwrap {
@@ -360,9 +422,77 @@
         border-bottom: 1px solid rgba(197, 195, 195, 0.5);
         box-shadow: 0rem 10px 1px rgba(197, 195, 195, 0.5);
     }
+    .guestsSection{
+        border: 1px solid black;
+        background-color: antiquewhite;
+        margin-left: -3rem;
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .totalguests{
+        margin-left: -4.8rem;
+      
+    }
+    .selecteddate{
+        margin-left: -10.8rem;
+    }
+    .editpage2{
+        margin-left: 2rem;
+        text-decoration: underline;
+    }
+    .editpage1,.editpage{
+        margin-left: 6.3rem;
+    }
+    .selectdate{
+        margin-left: -10.5rem;
+        margin-top: 1rem;
+    }
 
 }
+@media (min-width: 1024px) {
+    .totalguests{
+        margin-left: -27.7rem;
+        margin-top: 1rem;
+    }
+    .selectdate{
+    display: flex;
+    margin-left: -23.5rem;
+    }
+    .selecteddate{
+        display: flex;
+    margin-left: -23.7rem;
+    }
+    .guestsSection{
+        border: 1px solid black;
+        background-color: antiquewhite;
+        margin-left: -22rem;
+        display: flex;
+        flex-direction: column;
+        width: 20vw;
+        height: 50vh;
+        font-size: small;
+        object-fit: cover;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .editpage2{
+        margin-left: -8rem;
+        text-decoration: underline;
+    }
+    .editpage1,.editpage{
+        margin-left: -3.5rem;
+    }
+    .rightpage{
+        width: 60vw;
+        height: 60vh;
+        
+    }
 
+}
 
 
 
